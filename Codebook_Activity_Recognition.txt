@@ -1,0 +1,17 @@
+Codebook- Activity_Recognition.txt
+-----------------------------------
+
+The features selected in this database are sourced from the data provided for "Getting and Cleaning Data" course on Coursera. The data can be sourced from:
+http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones 
+
+
+The original data set had two datasets- test and training. Each data set had data from from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ (a total of 531 variables). Accompanying each data set, were two additional data sets describing Activity(Walking, Walking Upstairs, Walking Downstairs, Standing, Sitting and Laying) and Subjects (1-30).
+
+For both data sets, Activity and Subjects were added as additional columns. The two datasets were then merged together.
+ 
+From the merged dataset, only variables that contained "Mean" or "Std" (Standard Deviation) were selected. The Activity_Recognistion.txt contains average of each of these variable for each Activity and each Subject.
+
+The data can be read in R by using:
+data<- read.table(file_path,header=T)
+view(data)
+
